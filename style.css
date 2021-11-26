@@ -1,0 +1,9 @@
+.inputBox #btn {
+    position: relative;
+    cursor:pointer;
+    color: #fff;
+    background: #333;
+    font-size: 24px;
+    display: inline-block;
+    padding: 10px 15px;
+}
