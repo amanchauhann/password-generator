@@ -1,3 +1,100 @@
+:root{
+    --primary-color: #34495e;
+    --secondary-color: #191919;
+    --txt-color: white;
+    --input-border: #3498db;
+    --input-border-x: #2ecc71;
+}
+
+body{
+    padding: 0em;
+    margin: 0em;
+    font-family: sans-serif;
+    background-color: var(--primary-color);
+}
+
+.input-box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background: var(--secondary-color);
+    border-bottom-left-radius: 5em;
+}
+
+.input-box h1 {
+    color: var(--txt-color);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.input-box input[type = "text"],.input-box input[type = "password"] {
+    margin: 20px auto;
+    padding: 14px 10px;
+    display: block;
+    border-radius: 25px;
+    border: 0;
+    background: none;
+    text-align: center;
+    border: 2px solid var(--input-border);
+    width: 200px;
+    outline: none;
+    color: var(--input-border-x);
+    transition: 0.30s;
+}
+
+.input-box input[type = "text"]:hover,.input-box input[type = "password"]:hover {
+    width: 280px;
+    border-color: var(--input-border-x);
+}
+
+.input-box input[type = "text"]:focus,.input-box input[type = "password"]:focus {
+    width: 280px;
+    border-color: var(--input-border-x);
+}
+
+.input-box input[type = "submit"] {
+    margin: 20px auto;
+    padding: 14px 40px;
+    display: block;
+    border-radius: 25px;
+    border: 0;
+    background: none;
+    text-align: center;
+    border: 2px solid var(--input-border-x);
+    outline: none;
+    color: var(--txt-color);
+    transition: 0.30s;
+    cursor: pointer;
+}
+
+.input-box input[type = "submit"]:hover {
+    background-color: var(--input-border-x);
+}
+
+#btn {
+    margin: 20px auto;
+    padding: 14px 40px;
+    display: block;
+    border-radius: 25px;
+    border: 0;
+    background: none;
+    text-align: center;
+    border: 2px solid var(--input-border-x);
+    outline: none;
+    color: var(--txt-color);
+    transition: 0.30s;
+    cursor: pointer;
+    max-width: 30%;
+}
+
+#btn:hover {
+    background-color: var(--input-border-x);
+}
+
 .inputBox #btn {
     position: relative;
     cursor:pointer;
